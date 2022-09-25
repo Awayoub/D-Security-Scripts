@@ -6,7 +6,7 @@ local Settings = {
     Input = "",
 }
 OrionLib:MakeNotification({
-    Name = "Logged IN!",
+    Name = "Logged In!",
     Content = "You are logged in as "..Player.Name.. "." ,
     Image = "rbxassetid://4483345998",
     Time = 5
@@ -36,7 +36,7 @@ Tab:AddButton({
     Name = "Check Key",
     Callback = function()
         if Settings.Input == Settings.Key then
-           loadstring(game:HttpGet('https://raw.githubusercontent.com/Awayoub/D-Security-Scripts/main/New%20GUI%20Without%20Key%20(Long%20Version)'))()
+         --  //Loadstring of game here EG: loadstring(game:HttpGet('https://raw.githubusercontent.com/Awayoub/D-Security-Scripts/main/New%20GUI%20Without%20Key%20(Long%20Version)'))()
             OrionLib:MakeNotification({Name = "Correct Key",Content = "Correct Key - Loading GUI now!" ,Image = "rbxassetid://4483345998",Time = 5})
         else
              OrionLib:MakeNotification({Name = "InCorrect Key",Content = "InCorrect Key" ,Image = "rbxassetid://4483345998",Time = 5})
