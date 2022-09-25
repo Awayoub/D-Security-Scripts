@@ -2,7 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroText = "Key System"})
 local Settings = {
-    Key = "Hello",
+    Key = "8ce1c07a62af9d5170e4355264fba5ee",
     Input = "",
 }
 OrionLib:MakeNotification({
