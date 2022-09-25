@@ -1,0 +1,505 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "D-Security - Free Version", HidePremium = true, SaveConfig = true, IntroText = "D-Security | Free"})
+
+local Tab = Window:MakeTab({
+    Name = "Player",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+Tab:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 120,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "- Walkspeed",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Jump Power",
+	Min = 16,
+	Max = 120,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "- Jump Power",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Infinite Jump",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Gravity",
+	Min = 16,
+	Max = 120,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "- Gravity",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Field Of View - FOV",
+	Min = 16,
+	Max = 120,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "- Field Of View - FOV",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddButton({
+	Name = "Reset Player",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Click Delete",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+    Name = "Utilities",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "Fly",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "God Mode | You have to reset to disable",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Anti Ragdoll",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "No Fall Damage",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Anti Skydive",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Auto Parachute",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Anti Taze",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "No Punch Cooldown",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "No Crawl Cooldown",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "No E Wait",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Collect Aurdrops Aura",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Bypass Keycard Doors",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Noclip",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Arrest All",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddButton({
+	Name = "Admin - Infinite Yield",
+	Callback = function()
+      		print("Loading Admin GUI")
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+    Name = "Vechile",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Tab Under Development",
+	Callback = function()
+      		print("Under Development")
+  	end    
+})
+
+
+
+local Tab = Window:MakeTab({
+    Name = "Teleports",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Bank",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Jewelery Store",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Museum",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Power Plant",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Casino",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Donut Store",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Cargo Port",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "--------- Other ---------",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Prison Yard",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Prison Entrance",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Military Base",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Secret Agent Base",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Cargo Port",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Airport",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "1 Mil Dealership",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Gun Store",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Glider Shop",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Pet Shop",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "JetPack Location",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Pirate Cove",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Prison Island",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Race Track",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Crater City",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Visual",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Under Development",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Robbery Assist",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Under Development - WERE SO CLOSE!",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "AutoRob - Paid",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Please Purchase the paid version in our discord",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Discord Invite Link:.gg/RS9Pb2FDFh",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Combat",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Under Development",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Miscellaneous",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Under Development",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Settings",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Under Development",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Credits",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Scripter - DL_RobloxTerms - ! _DVST8.sh#9625",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "UI Designer - Corrosive_Error | HYPERION#2028",
+	Callback = function()
+      		print("Executed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Update Logs",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+OrionLib:Init()
