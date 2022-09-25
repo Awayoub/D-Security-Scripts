@@ -11,18 +11,6 @@ OrionLib:MakeNotification({
     Image = "rbxassetid://4483345998",
     Time = 5
 })
-function MakeScriptHub()
-    local Window = OrionLib:MakeWindow({Name = "D-Security", HidePremium = true, SaveConfig = true, IntroText = "D-Security"})
-end
-
-function CorrectKeyNotification()
-    OrionLib:MakeNotification({
-        Name = "Correct Key",
-        Content = "Correct Key - Loading GUI now!" ,
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
 function IncorrectKeyNotification()
     OrionLib:MakeNotification({
         Name = "Incorrect Key",
@@ -48,10 +36,10 @@ Tab:AddButton({
     Name = "Check Key",
     Callback = function()
         if Settings.Input == Settings.Key then
-            MakeScriptHub() 
-            CorrectKeyNotification()
-            else
-            IncorrectKeyNotification()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/Awayoub/script.lua/main/name'))()
+            OrionLib:MakeNotification({Name = "Correct Key",Content = "Correct Key - Loading GUI now!" ,Image = "rbxassetid://4483345998",Time = 5})
+        else
+             OrionLib:MakeNotification({Name = "InCorrect Key",Content = "InCorrect Key" ,Image = "rbxassetid://4483345998",Time = 5})
         end
     end    
 })
